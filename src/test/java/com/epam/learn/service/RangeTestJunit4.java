@@ -36,8 +36,8 @@ public class RangeTestJunit4 {
     }
 
     @Test
-    public void check() {
-        boolean actualResult = Range.check(value);
+    public void checkAllRanges() {
+        boolean actualResult = Range.checkIfValueIsInRange(value);
         System.out.println(String.format(MESSAGE, value,  actualResult));
         assertEquals(actualResult, expectedResult);
     }

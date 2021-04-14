@@ -40,8 +40,8 @@ public class RangeWithIncludesTestJunit4 {
     }
 
     @Test
-    public void check() {
-        boolean actualResult = Range.check(value, INCLUDE_START, INCLUDE_END);
+    public void checkAllRanges() {
+        boolean actualResult = Range.checkIfValueIsInRange(value, INCLUDE_START, INCLUDE_END);
         System.out.println( String.format(MESSAGE, value,  actualResult));
         assertEquals(actualResult, expectedResult);
     }

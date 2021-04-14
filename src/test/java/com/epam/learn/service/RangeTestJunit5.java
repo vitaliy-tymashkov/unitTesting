@@ -1,6 +1,6 @@
 package com.epam.learn.service;
 
-import static com.epam.learn.service.Range.check;
+import static com.epam.learn.service.Range.checkIfValueIsInRange;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
 import org.junit.jupiter.params.ParameterizedTest;
@@ -19,7 +19,7 @@ class RangeTestJunit5 {
         int value = 15;
 
         //When
-        boolean actualResult = check(value);
+        boolean actualResult = Range.checkIfValueIsInRange(value);
         System.out.println(String.format(MESSAGE, value,  actualResult));
 
         //Then
